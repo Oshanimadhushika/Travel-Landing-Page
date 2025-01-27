@@ -21,7 +21,7 @@ const Hero = () => {
       setImageIndex((prevIndex) => (prevIndex + 1) % imageUrls.length);
     };
 
-    const intervalId = setInterval(nextImage, 5000);
+    const intervalId = setInterval(nextImage, 3000);
 
     return () => clearInterval(intervalId);
   }, [imageUrls]);
