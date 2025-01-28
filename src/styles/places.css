@@ -1,0 +1,16 @@
+/* Optional: Add these styles to your CSS file if you want additional styling */
+.place-card {
+  transition: all 0.3s ease;
+}
+
+.place-card:hover {
+  transform: translateY(-2px);
+}
+
+.place-image {
+  transition: all 0.3s ease;
+}
+
+.place-card:hover .place-image {
+  transform: scale(1.05);
+} 
