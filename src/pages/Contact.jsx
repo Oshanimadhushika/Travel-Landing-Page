@@ -1,8 +1,25 @@
 import React from 'react';
 import { Container } from 'reactstrap';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
+  // Add social media URLs
+  const socialLinks = {
+    facebook: "https://facebook.com/paradiseguide",
+    twitter: "https://twitter.com/paradiseguide",
+    instagram: "https://instagram.com/paradiseguide",
+    linkedin: "https://linkedin.com/company/paradiseguide"
+  };
+
+  // Add navigation URLs
+  const navigationLinks = {
+    about: "/about",
+    services: "/services",
+    destinations: "/destinations",
+    contact: "/contact"
+  };
+
   return (
     <>
       {/* Contact Section */}
@@ -118,16 +135,40 @@ const Contact = () => {
                 Your ultimate travel companion for exploring the beauty of Sri Lanka.
               </p>
               <div className="flex space-x-4">
-                <a href="#" className="hover:text-white transition-colors">
+                <a 
+                  href={socialLinks.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                  aria-label="Visit our Facebook page"
+                >
                   <FaFacebook className="text-xl" />
                 </a>
-                <a href="#" className="hover:text-white transition-colors">
+                <a 
+                  href={socialLinks.twitter}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                  aria-label="Visit our Twitter profile"
+                >
                   <FaTwitter className="text-xl" />
                 </a>
-                <a href="#" className="hover:text-white transition-colors">
+                <a 
+                  href={socialLinks.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                  aria-label="Visit our Instagram profile"
+                >
                   <FaInstagram className="text-xl" />
                 </a>
-                <a href="#" className="hover:text-white transition-colors">
+                <a 
+                  href={socialLinks.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                  aria-label="Visit our LinkedIn page"
+                >
                   <FaLinkedin className="text-xl" />
                 </a>
               </div>
@@ -137,10 +178,26 @@ const Contact = () => {
             <div>
               <h3 className="text-white text-lg font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="hover:text-white transition-colors">About Us</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Services</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Destinations</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
+                <li>
+                  <Link to={navigationLinks.about} className="hover:text-white transition-colors">
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link to={navigationLinks.services} className="hover:text-white transition-colors">
+                    Services
+                  </Link>
+                </li>
+                <li>
+                  <Link to={navigationLinks.destinations} className="hover:text-white transition-colors">
+                    Destinations
+                  </Link>
+                </li>
+                <li>
+                  <Link to={navigationLinks.contact} className="hover:text-white transition-colors">
+                    Contact
+                  </Link>
+                </li>
               </ul>
             </div>
 
@@ -148,10 +205,26 @@ const Contact = () => {
             <div>
               <h3 className="text-white text-lg font-semibold mb-4">Popular Destinations</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="hover:text-white transition-colors">Sigiriya</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Kandy</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Galle Fort</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Ella</a></li>
+                <li>
+                  <Link to="/destinations/sigiriya" className="hover:text-white transition-colors">
+                    Sigiriya
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/destinations/kandy" className="hover:text-white transition-colors">
+                    Kandy
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/destinations/galle-fort" className="hover:text-white transition-colors">
+                    Galle Fort
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/destinations/ella" className="hover:text-white transition-colors">
+                    Ella
+                  </Link>
+                </li>
               </ul>
             </div>
 
