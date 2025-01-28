@@ -64,7 +64,7 @@ const About = () => {
   return (
     <section className="py-16 bg-gray-50">
       <Container fluid className="px-4 lg:px-8">
-        {/* Title Section - Left aligned */}
+        {/* Title Section */}
         <Row className="mb-12">
           <Col lg="6" className="ps-4">
             <h2 className="text-4xl md:text-5xl font-playfair font-bold mb-4">
