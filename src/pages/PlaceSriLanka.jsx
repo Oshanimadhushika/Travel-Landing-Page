@@ -6,6 +6,7 @@ import NineArch from '../assets/Nine_Arch_Bridge.jpg';
 import Galle from '../assets/seaGirl.jpg';
 import Kandy from '../assets/kandyLake.jpeg';
 import Yala from '../assets/dear_yala.png';
+import SriPadaya from '../assets/sripadaya.jpeg';
 import { Link } from 'react-router-dom';
 
 const PlaceSriLanka = () => {
@@ -39,7 +40,12 @@ const PlaceSriLanka = () => {
       name: "Yala National Park",
       image: Yala,
       tours: "25+ Tours"
-    }
+    },
+    {
+        name: "Sri Padaya",
+        image: SriPadaya,
+        tours: "10+ Tours"
+      }
   ];
 
   return (
