@@ -4,6 +4,7 @@ import Hero from "./pages/Hero";
 import PlaceSriLanka from "./pages/PlaceSriLanka";
 import { BrowserRouter as Router } from 'react-router-dom';
 import MobilePart from "./pages/MobilePart";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <About />
         <PlaceSriLanka />
         <MobilePart />
+        <Contact />
       </div>
     </Router>
   );
