@@ -71,7 +71,7 @@ const PlaceSriLanka = () => {
                 />
               </div>
               <div className="flex-grow p-4">
-                <h3 className="text-lg font-semibold text-gray-800 group-hover:text-blue-600">
+                <h3 className="text-lg font-bold text-gray-800 group-hover:text-blue-600 font-mono">
                   {place.name}
                 </h3>
                 <p className="text-sm text-gray-600 mt-1">
