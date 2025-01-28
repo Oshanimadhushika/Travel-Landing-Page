@@ -1,7 +1,15 @@
-import React from 'react';
-import { Container } from 'reactstrap';
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Container } from "reactstrap";
+import {
+  FaPhone,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedin,
+} from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   // Add social media URLs
@@ -9,7 +17,7 @@ const Contact = () => {
     facebook: "https://facebook.com/paradiseguide",
     twitter: "https://twitter.com/paradiseguide",
     instagram: "https://instagram.com/paradiseguide",
-    linkedin: "https://linkedin.com/company/paradiseguide"
+    linkedin: "https://linkedin.com/company/paradiseguide",
   };
 
   // Add navigation URLs
@@ -17,7 +25,7 @@ const Contact = () => {
     about: "/about",
     services: "/services",
     destinations: "/destinations",
-    contact: "/contact"
+    contact: "/contact",
   };
 
   return (
@@ -30,7 +38,8 @@ const Contact = () => {
               Get in Touch
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Have questions about Paradise Guide? We're here to help. Send us a message and we'll respond as soon as possible.
+              Have questions about Paradise Guide? We're here to help. Send us a
+              message and we'll respond as soon as possible.
             </p>
           </div>
 
@@ -76,7 +85,9 @@ const Contact = () => {
               <form className="bg-white rounded-lg shadow-md p-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-gray-700 mb-2" htmlFor="name">Name</label>
+                    <label className="block text-gray-700 mb-2" htmlFor="name">
+                      Name
+                    </label>
                     <input
                       type="text"
                       id="name"
@@ -85,7 +96,9 @@ const Contact = () => {
                     />
                   </div>
                   <div>
-                    <label className="block text-gray-700 mb-2" htmlFor="email">Email</label>
+                    <label className="block text-gray-700 mb-2" htmlFor="email">
+                      Email
+                    </label>
                     <input
                       type="email"
                       id="email"
@@ -94,7 +107,12 @@ const Contact = () => {
                     />
                   </div>
                   <div className="md:col-span-2">
-                    <label className="block text-gray-700 mb-2" htmlFor="subject">Subject</label>
+                    <label
+                      className="block text-gray-700 mb-2"
+                      htmlFor="subject"
+                    >
+                      Subject
+                    </label>
                     <input
                       type="text"
                       id="subject"
@@ -103,7 +121,12 @@ const Contact = () => {
                     />
                   </div>
                   <div className="md:col-span-2">
-                    <label className="block text-gray-700 mb-2" htmlFor="message">Message</label>
+                    <label
+                      className="block text-gray-700 mb-2"
+                      htmlFor="message"
+                    >
+                      Message
+                    </label>
                     <textarea
                       id="message"
                       rows="4"
@@ -130,12 +153,15 @@ const Contact = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-12">
             {/* Company Info */}
             <div>
-              <h3 className="text-white text-lg font-semibold mb-4">Paradise Guide</h3>
+              <h3 className="text-white text-lg font-semibold mb-4">
+                Paradise Guide
+              </h3>
               <p className="text-gray-400 mb-4">
-                Your ultimate travel companion for exploring the beauty of Sri Lanka.
+                Your ultimate travel companion for exploring the beauty of Sri
+                Lanka.
               </p>
               <div className="flex space-x-4">
-                <a 
+                <a
                   href={socialLinks.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -144,7 +170,7 @@ const Contact = () => {
                 >
                   <FaFacebook className="text-xl" />
                 </a>
-                <a 
+                <a
                   href={socialLinks.twitter}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -153,7 +179,7 @@ const Contact = () => {
                 >
                   <FaTwitter className="text-xl" />
                 </a>
-                <a 
+                <a
                   href={socialLinks.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -162,7 +188,7 @@ const Contact = () => {
                 >
                   <FaInstagram className="text-xl" />
                 </a>
-                <a 
+                <a
                   href={socialLinks.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -176,25 +202,39 @@ const Contact = () => {
 
             {/* Quick Links */}
             <div>
-              <h3 className="text-white text-lg font-semibold mb-4">Quick Links</h3>
+              <h3 className="text-white text-lg font-semibold mb-4">
+                Quick Links
+              </h3>
               <ul className="space-y-2">
                 <li>
-                  <Link to={navigationLinks.about} className="hover:text-white transition-colors">
+                  <Link
+                    to={navigationLinks.about}
+                    className="hover:text-white transition-colors"
+                  >
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link to={navigationLinks.services} className="hover:text-white transition-colors">
+                  <Link
+                    to={navigationLinks.services}
+                    className="hover:text-white transition-colors"
+                  >
                     Services
                   </Link>
                 </li>
                 <li>
-                  <Link to={navigationLinks.destinations} className="hover:text-white transition-colors">
+                  <Link
+                    to={navigationLinks.destinations}
+                    className="hover:text-white transition-colors"
+                  >
                     Destinations
                   </Link>
                 </li>
                 <li>
-                  <Link to={navigationLinks.contact} className="hover:text-white transition-colors">
+                  <Link
+                    to={navigationLinks.contact}
+                    className="hover:text-white transition-colors"
+                  >
                     Contact
                   </Link>
                 </li>
@@ -203,25 +243,39 @@ const Contact = () => {
 
             {/* Popular Destinations */}
             <div>
-              <h3 className="text-white text-lg font-semibold mb-4">Popular Destinations</h3>
+              <h3 className="text-white text-lg font-semibold mb-4">
+                Popular Destinations
+              </h3>
               <ul className="space-y-2">
                 <li>
-                  <Link to="/destinations/sigiriya" className="hover:text-white transition-colors">
+                  <Link
+                    to="/destinations/sigiriya"
+                    className="hover:text-white transition-colors"
+                  >
                     Sigiriya
                   </Link>
                 </li>
                 <li>
-                  <Link to="/destinations/kandy" className="hover:text-white transition-colors">
+                  <Link
+                    to="/destinations/kandy"
+                    className="hover:text-white transition-colors"
+                  >
                     Kandy
                   </Link>
                 </li>
                 <li>
-                  <Link to="/destinations/galle-fort" className="hover:text-white transition-colors">
+                  <Link
+                    to="/destinations/galle-fort"
+                    className="hover:text-white transition-colors"
+                  >
                     Galle Fort
                   </Link>
                 </li>
                 <li>
-                  <Link to="/destinations/ella" className="hover:text-white transition-colors">
+                  <Link
+                    to="/destinations/ella"
+                    className="hover:text-white transition-colors"
+                  >
                     Ella
                   </Link>
                 </li>
@@ -230,7 +284,9 @@ const Contact = () => {
 
             {/* Newsletter */}
             <div>
-              <h3 className="text-white text-lg font-semibold mb-4">Newsletter</h3>
+              <h3 className="text-white text-lg font-semibold mb-4">
+                Newsletter
+              </h3>
               <p className="text-gray-400 mb-4">
                 Subscribe to our newsletter for travel tips and updates.
               </p>

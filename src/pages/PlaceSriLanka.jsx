@@ -1,51 +1,51 @@
-import React from 'react';
-import { Container } from 'reactstrap';
-import Sigiriya from '../assets/sigiriya.jpeg';
-import Temple from '../assets/kandy.png';
-import NineArch from '../assets/Nine_Arch_Bridge.jpg';
-import Galle from '../assets/seaGirl.jpg';
-import Kandy from '../assets/kandyLake.jpeg';
-import Yala from '../assets/dear_yala.png';
-import SriPadaya from '../assets/sripadaya.jpeg';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Container } from "reactstrap";
+import Sigiriya from "../assets/sigiriya.jpeg";
+import Temple from "../assets/kandy.png";
+import NineArch from "../assets/Nine_Arch_Bridge.jpg";
+import Galle from "../assets/seaGirl.jpg";
+import Kandy from "../assets/kandyLake.jpeg";
+import Yala from "../assets/dear_yala.png";
+import SriPadaya from "../assets/sripadaya.jpeg";
+import { Link } from "react-router-dom";
 
 const PlaceSriLanka = () => {
   const places = [
     {
       name: "Sigiriya Rock",
       image: Sigiriya,
-      tours: "50+ Tours"
+      tours: "50+ Tours",
     },
     {
       name: "Temple of Tooth",
       image: Temple,
-      tours: "40+ Tours"
+      tours: "40+ Tours",
     },
     {
       name: "Nine Arch Bridge",
       image: NineArch,
-      tours: "30+ Tours"
+      tours: "30+ Tours",
     },
     {
       name: "Galle Fort",
       image: Galle,
-      tours: "45+ Tours"
+      tours: "45+ Tours",
     },
     {
       name: "Kandy Lake",
       image: Kandy,
-      tours: "35+ Tours"
+      tours: "35+ Tours",
     },
     {
       name: "Yala National Park",
       image: Yala,
-      tours: "25+ Tours"
+      tours: "25+ Tours",
     },
     {
-        name: "Sri Padaya",
-        image: SriPadaya,
-        tours: "10+ Tours"
-      }
+      name: "Sri Padaya",
+      image: SriPadaya,
+      tours: "10+ Tours",
+    },
   ];
 
   return (
@@ -55,8 +55,8 @@ const PlaceSriLanka = () => {
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
             Top Attractions Of Sri Lanka
           </h2>
-          <Link 
-            to="/all-places" 
+          <Link
+            to="/all-places"
             className="text-blue-600 hover:text-blue-700 font-medium transition-colors duration-300"
           >
             See all
@@ -65,8 +65,8 @@ const PlaceSriLanka = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
           {places.map((place, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="flex items-center bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:shadow-gray-200"
             >
               <div className="flex-shrink-0">
@@ -80,9 +80,7 @@ const PlaceSriLanka = () => {
                 <h3 className="text-lg font-bold text-gray-800 group-hover:text-blue-600 font-mono">
                   {place.name}
                 </h3>
-                <p className="text-sm text-gray-600 mt-1">
-                  {place.tours}
-                </p>
+                <p className="text-sm text-gray-600 mt-1">{place.tours}</p>
               </div>
             </div>
           ))}
